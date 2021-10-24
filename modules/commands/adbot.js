@@ -61,19 +61,15 @@ module.exports.run = async({api,event,args}) => {
     if (args[0] == "admin") {
       var callback = () => api.sendMessage(
   {body:`梁Admin Bot梁\n
-👀 Tên: Hoàng Hải Long ( LTD )
-❎ Tuổi: 19 🐒
+👀 Tên: Trần Văn Chung (TVC)
+❎ Tuổi: 15
 👤 Giới tính: Nam
-💫 Chiều cao cân nặng: 1m71 x 52kg
+💫 Chiều cao cân nặng: 1m60 x 48 kg
 💘 Mối quan hệ: Độc thân
-🌎 Quê quán: Phúc Yên ( Vĩnh Phúc - 88 )
-👫 Gu: Biết nấu cơm
-🌸 Tính cách: Chả biết nữa =))
-🌀 Sở thích: Chơi game, xem phim anime blabla, ăn, ngủ
+🌎 Quê quán: Sóc Sơn - Hà Nội
 💻Contact💻
-☎ SĐT&Zalo:035.525.8611
-🌐 Facebook: https://www.facebook.com/longk.hoanghai
-✉️ Email: hoanghailongk@gmail.com`,
+🌐 Facebook: https://www.facebook.com/tranvanchung206/
+✉️ Email: tranvanchung2k6@hotmail.com`,
     attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
       return request(
